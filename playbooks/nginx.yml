@@ -1,0 +1,7 @@
+---
+  
+- name: Instal nginx with roles
+  hosts: app_servers
+  become: true
+  roles:
+    - nginx        

@@ -1,0 +1,7 @@
+---
+  
+- name: Instal swagger editor with roles
+  hosts: app_servers
+  become: true
+  roles:
+    - swagger        

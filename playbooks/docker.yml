@@ -1,0 +1,7 @@
+---
+  
+- name: Instal docker with roles
+  hosts: app_servers
+  become: true
+  roles:
+    - docker        

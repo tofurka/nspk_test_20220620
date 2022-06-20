@@ -1,0 +1,11 @@
+---
+
+- name: copy docker-compose yml
+  ansible.builtin.copy:
+      src: /etc/ansible/roles/swagger/files/docker-compose.yml
+      dest: /var/apps/nginx_swagger/
+      follow: yes
+
+- name: run docker-compose.yml
+  docker_compose:
+      project_src: /var/apps/nginx_swagger
